@@ -35,3 +35,6 @@ title('$\widetilde{I}$(z) vs z','Interpreter','latex');
 xlabel('z, length of antenna (m)','Interpreter','latex');
 ylabel('$\widetilde{I}$(z) (A)','Interpreter','latex');
 grid minor
+
+
+
