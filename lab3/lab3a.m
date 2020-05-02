@@ -1,6 +1,10 @@
 % ECE332: lab 3
 
 % part 1)
+% Plot I(z) vs z for a dipole antenna of length L = 1.25*lambda
+% oriented in the z-direction.  Assume z = 0 is the middle 
+% of the antenna, so your plot goes from z = -L/2 to L/2.  L
+% Let Io (the magnitude of the current phasor) = 1
 
 c = 2.99792458*10^8;% speed of light
 I0 = 1;             % current amplitude
@@ -12,6 +16,7 @@ N = 100;            % # of data points
 z = linspace(-L/2,L/2,N);
 
 % piecewise equation for current phasor I~(z)
+
 %{
 for i = 1:N
     if z(i) < 0
@@ -30,3 +35,4 @@ plot(z,I)
 title('$\widetilde{I}$(z) vs z','Interpreter','latex')
 xlabel('z, length of antenna (m)','Interpreter','latex')
 ylabel('$\widetilde{I}$(z) (A)','Interpreter','latex')
+grid minor 
