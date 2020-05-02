@@ -1,6 +1,10 @@
 % ECE332: lab 3
 
 % part 1)
+% Plot I(z) vs z for a dipole antenna of length L = 1.25*lambda
+% oriented in the z-direction.  Assume z = 0 is the middle of the 
+% antenna, so your plot goes from z = -L/2 to L/2.  Let Io (the 
+% magnitude of the current  phasor) = 1.
 
 c = 2.99792458*10^8;% speed of light
 I0 = 1;             % current amplitude
@@ -27,6 +31,7 @@ end
 I = I0.*sin(k.*(L/2-abs(z)));
 
 plot(z,I)
-title('$\widetilde{I}$(z) vs z','Interpreter','latex')
-xlabel('z, length of antenna (m)','Interpreter','latex')
-ylabel('$\widetilde{I}$(z) (A)','Interpreter','latex')
+title('$\widetilde{I}$(z) vs z','Interpreter','latex');
+xlabel('z, length of antenna (m)','Interpreter','latex');
+ylabel('$\widetilde{I}$(z) (A)','Interpreter','latex');
+grid minor
